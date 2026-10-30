@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeLink - Organ Donation</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><h2>♥ LifeLink</h2><nav><a href="/">Home</a><a href="/donors">View Donors</a></nav></header>
+  <main class="card">
+    <p class="tag">GIVE THE GIFT OF LIFE</p>
+    <h1>Organ Donor Registration</h1>
+    <p class="intro">Register your interest in organ donation and help spread awareness.</p>
+    <form action="/register" method="post">
+      <label>Full Name</label><input type="text" name="name" required>
+      <label>Age</label><input type="number" name="age" min="18" max="100" required>
+      <label>Blood Group</label>
+      <select name="blood" required>
+        <option value="">Select blood group</option>
+        <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+        <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+      </select>
+      <label>Organ</label>
+      <select name="organ" required>
+        <option value="">Select organ</option>
+        <option>Kidney</option><option>Liver</option><option>Heart</option>
+        <option>Lungs</option><option>Pancreas</option><option>Cornea</option>
+      </select>
+      <label>City</label><input type="text" name="city" required>
+      <label>Phone Number</label><input type="tel" name="phone" required>
+      <button type="submit">Register Donor Interest</button>
+    </form>
+    <p class="note">Academic demonstration only. This is not an official donor registration or transplant service.</p>
+  </main>
+</body>
+</html>

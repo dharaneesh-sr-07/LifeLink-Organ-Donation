@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS donors (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    age INTEGER NOT NULL,
+    blood_group TEXT NOT NULL,
+    organ TEXT NOT NULL,
+    city TEXT NOT NULL,
+    phone TEXT NOT NULL
+);
