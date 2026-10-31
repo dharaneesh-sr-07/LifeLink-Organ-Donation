@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: lifelink-organ-donation
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
